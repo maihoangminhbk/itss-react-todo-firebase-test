@@ -21,7 +21,7 @@ function Upload({ userImage, onSletctedImage }) {
 
   const ImageViewer = () => {
     if (!imageUrl) {
-      return <i class="fas fa-user"></i>
+      return <i className="fas fa-user"></i>
     } else {
       return (
         <div>
@@ -34,24 +34,24 @@ function Upload({ userImage, onSletctedImage }) {
   return (
     <div className="App">
       <div className={`modal ${active}`}>
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <div class="file is-boxed" >
-            <label class="file-label">
-              <input class="file-input" type="file" name="resume" onChange={handleImage} />
-              <span class="file-cta">
-                <span class="file-icon">
-                  <i class="fas fa-upload"></i>
+        <div className="modal-background"></div>
+        <div className="modal-content">
+          <div className="file is-boxed" >
+            <label className="file-label">
+              <input className="file-input" type="file" name="resume" onChange={handleImage} />
+              <span className="file-cta">
+                <span className="file-icon">
+                  <i className="fas fa-upload"></i>
                 </span>
-                <span class="file-label">画像を選択してください</span>
+                <span className="file-label">画像を選択してください</span>
               </span>
             </label>
           </div>
-          <button class="modal-close is-large" aria-label="close" onClick={handleClick}></button>
+          <button className="modal-close is-large" aria-label="close" onClick={handleClick}></button>
         </div>
       </div>
-      <button onClick={handleClick} class="button is-primary is-inverted">
-        <span class="icon">
+      <button onClick={handleClick} className="button is-primary is-inverted">
+        <span className="icon">
           <ImageViewer />
         </span>
       </button>

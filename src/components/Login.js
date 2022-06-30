@@ -1,13 +1,13 @@
 import React from 'react';
-// import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+// import Styledfirebaseauth from 'react-firebaseui/Styledfirebaseauth';
 
 /* ライブラリ */
-import { firebase, auth, uiConfig } from "../lib/firebase";
+import { firebase, auth, uiconfig } from "../lib/firebase";
 
 function Login() {
   return (
     <div className="column panel-block">
-      <div uiConfig={uiConfig} firebaseAuth={auth} />
+      <div uiconfig={uiconfig} firebaseauth={auth} />
     </div>
   );
 };

@@ -59,7 +59,7 @@ export const clearFirebaseItem = async (item) => {
   });
 };
 
-export const uiConfig = {
+export const uiconfig = {
   signInFlow: 'popup',
   signInSuccessUrl: "/",
   signInOptions: [
